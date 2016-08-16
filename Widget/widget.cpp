@@ -9,6 +9,7 @@ Widget::Widget(QWidget *parent) :
 
 	ui->setupUi(this);
 	//like event listener
+	//adding listener to 2 buttons
 	ui->pushButton->installEventFilter(this);
 	ui->pushButton_2->installEventFilter(this);
 	
@@ -41,6 +42,7 @@ bool Widget::eventFilter(QObject *obj, QEvent *event)
 {
 	if (event->type() == QEvent::MouseButtonPress)
 	{
+		//getting button name
 		QString qs;
 		qs = obj->objectName();
 

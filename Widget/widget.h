@@ -12,7 +12,7 @@ namespace Ui {
 class Widget : public QWidget
 {
 	Q_OBJECT
-
+//methods
 public:
 	explicit Widget(QWidget *parent = 0);
 	~Widget();
@@ -23,6 +23,7 @@ public:
 //custom slot	
 public slots:
 	void example();
+	//variables
 private:
 	Ui::Widget *ui;
 	int sayi1,sayi2;
